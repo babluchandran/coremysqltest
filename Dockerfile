@@ -14,4 +14,4 @@ FROM microsoft/dotnet:aspnetcore-runtime
 WORKDIR /app
 COPY --from=build-env /app/out .
 EXPOSE 8080/tcp
-ENTRYPOINT ["dotnet", "dotnetdocker.dll"]
+ENTRYPOINT ["dotnet", "WebApplication3.dll"]
